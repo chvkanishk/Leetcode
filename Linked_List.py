@@ -41,13 +41,3 @@ class LinkedList:
             current_node = current_node.next
         print("None")
 
-
-l= LinkedList()
-l.append(1)
-l.append(2)
-l.append(3)
-l.append(4)
-
-l.Delete(4)
-
-l.Display()
