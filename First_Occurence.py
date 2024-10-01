@@ -3,10 +3,18 @@ def Occurence(haystack,needle):
         return -1
     for i in range(len(haystack)):
         if haystack[i:len(needle)]== needle:
-            return 0
+            return i
     return -1
 
-haystack = "leetcode"
-needle = "leeto"
 
-print(Occurence(haystack,needle))
+def Occ(haystack,needle):
+    try:
+        return haystack.index(needle)
+    except ValueError:
+        return -1
+
+haystack = "hello"
+needle = "ll"
+
+print(Occ(haystack,needle))
+
