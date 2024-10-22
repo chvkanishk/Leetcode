@@ -1,10 +1,13 @@
-def gcd(str1,str2):
-    i=0
-    j=0
-    r=[]
-    while i<len(str1) and j<len(str2):
-        if str1[i] == str2[j]:
-            r.append(str2[i])
+def gcdofstring(s1,s2):
+
+    def gcd(a,b):
+        while b:
+            a,b=b,a%b
+        return a
+    if s1+s2 != s2+s1:
+        return ""
+    len_gcd = gcd(len(s1),len(s2))
+    r= s1[:len_gcd]
     return r
 
 
@@ -21,7 +24,7 @@ def gcd(str1,str2):
 
 
 
-str1 = "ABCABC"
-str2 = "ABC"
+str1 = "ABABAB"
+str2 = "ABAB"
 
-print(gcd(str1,str2))
+print(gcdofstring(str1,str2))
