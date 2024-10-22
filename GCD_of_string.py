@@ -11,19 +11,6 @@ def gcdofstring(s1,s2):
     return r
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 str1 = "ABABAB"
 str2 = "ABAB"
 
