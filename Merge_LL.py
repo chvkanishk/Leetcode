@@ -24,7 +24,17 @@ def Merge(l1,l2):
     
     return merged_list
 
+def reverse(head):
+    prev= None 
+    current = head
 
+    while current is not None:
+        next_node= current.next
+        current.next = prev
+        prev = current
+        current = next_node
+
+    return prev  
 
 
 list1= LinkedList()
